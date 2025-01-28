@@ -1,0 +1,23 @@
+meta {
+  name: ResgiterTask
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8080/task
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6InRlc3RlQGdtYWlsLmNvbSIsImV4cCI6MTczODA3Njc2Mn0.NGqpkL4xzAdexIpYWYm9sqelgNmFcbrBT4oz34S9bQY
+}
+
+body:json {
+  {
+    "task": "test",
+    "status": "PENDENTE",
+    "userId": "30c1b3ad-c41e-4a31-9b14-8a387d9290fe"
+  }
+}

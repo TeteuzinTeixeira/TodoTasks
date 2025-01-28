@@ -1,0 +1,15 @@
+meta {
+  name: DeleteTasks
+  type: http
+  seq: 2
+}
+
+delete {
+  url: http://localhost:8080/task/9e9071b6-8aa6-4270-b851-55222db05359
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6InRlc3RlQGdtYWlsLmNvbSIsImV4cCI6MTczODA3NDk5NH0.tKiEw4kJgrHkBT-2YOjni41uPQsSBl1M9I6C_s2X2zQ
+}

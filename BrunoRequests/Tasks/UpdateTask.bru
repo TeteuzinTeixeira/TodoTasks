@@ -1,0 +1,24 @@
+meta {
+  name: UpdateTask
+  type: http
+  seq: 1
+}
+
+put {
+  url: http://localhost:8080/task
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6InRlc3RlQGdtYWlsLmNvbSIsImV4cCI6MTczODA3NjAzNH0.bTjRkwFvphgzb0XI6DIkBUiv4hhp-8wEtsIU9D5KSoM
+}
+
+body:json {
+  {
+    "id": "94f5c5dc-cc4d-4124-b412-eb1995cc4794",
+    "task": "test 2",
+    "status": "CONCLUIDA",
+    "userId": "6d99d586-c3ad-4b4d-bfc1-61fe6f720a07"
+  }
+}
